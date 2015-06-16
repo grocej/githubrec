@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js" charset="utf-8">
+  <script type="html-repo-template" id="postTmpl">
+
+  </script>
+  <title>Jason Groce Github</title>
+</head>
+<body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="headerContainer">
+          <nav class="headerBar">
+            <nav class="leftNav">
+              <ul>
+                <li><span class="mega-octicon octicon-mark-github" id="git-logo"></span></li>
+                <li><input type="text" class="js-site-search-focus  chromeless-input" placeholder="Search GitHub" id="navSearch" autocapitalize="off"></li>
+                <li class="headerNav">Explore</li>
+                <li class="headerNav">Gist</li>
+                <li class="headerNav">Blog</li>
+                <li class="headerNav">Help</li>
+              </ul>
+            </nav>
+            <nav class="rightNav">
+              <ul>
+                <li><img class="tinyavatar" src="images/tinyavatar.jpeg"/> grocej</li>
+                <li><span id="minicon" class="octicon octicon-plus"></span></li>
+                <li><span id="minicon" class="octicon octicon-triangle-down"></span></li>
+                <li><span id="minicon"class="octicon octicon-inbox"></span></li>
+                <li><span id="minicon" class="octicon octicon-gear"></span></li>
+                <li><span id="minicon" class="octicon octicon-sign-out"></span></li>
+              </ul>
+            </nav>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Sidebar & Content -->
+          <!--Sidebar-->
+      <div class="mainBox">
+        <div class="column1container">
+          <div class="avatar">
+            <img class="gaines" src="images/12489062.jpeg"/>
+          </div>
+            <h1>
+              <span class="meName">Jason Groce</span><br />
+              <span class="userId">grocej</span>
+            </h1>
+          <div class="infoblock" id="meinfo">
+            <div class="group">
+              <span class="octicon octicon-organization" id="groupIcon">
+              </span><p class="info">The Iron Yard</p>
+            </div>
+            <div class="group">
+              <span class="octicon octicon-location" id="placeIcon"></span>
+              <p class="info">Charleston, SC</p>
+            </div>
+            <div class="group">
+              <span class="octicon octicon-link"></span>
+              <p class="info">http://www.twitter.com/jasonlgroce</p>
+            </div>
+          </div>
+          <div class="followerBlock">
+              <div class="follower1">
+                <h2>1.1M</h2>
+                <p class=followersP>Followers</p>
+              </div>
+              <div class="follower2">
+                <h2>32</h2>
+                <p class=followersP>Starred</p>
+              </div>
+              <div class="follower3">
+                <h2>0</h2>
+                <p class=followersP>Following</p>
+              </div>
+          </div>
+          <div class="organiza"><h4>Organizations</h4>
+            <img id="frontEndLogo" src="images/12236563.png"/>
+          </div>
+        </div>
+
+        <!--Content Container-->
+
+        <div class="column2container">
+          <div class="contentWrapper">
+            <div class="topNavWrap">
+              <div class="column2nav">
+                <div class="edit">
+                  <button id="editButt"><span class="octicon octicon-pencil"></span><span id="editProf">Edit Profile</span></button>
+                </div>
+                <div class="topButton" id="contrib">
+                  <span class="octicon octicon-diff-added"></span>
+                  <li>Contributions</li>
+                </div>
+                <div class="topButton" id="repo">
+                  <span class="octicon octicon-repo"></span>
+                  <li>Repositories</li>
+                </div>
+                <div class="topButton" id="activity">
+                  <span class="octicon octicon-rss"></span>
+                  <li>Public activity</li>
+                </div>
+              </div>
+            </div>
+            <div class="repoSearch">
+             <div class="search">
+               <input type="text" placeholder="Find a repository..."></input><button>Search</button>
+             </div>
+             <div class="links">
+                <ul>
+                 <li>All</li>
+                 <li>Public</li>
+                 <li>Private</li>
+                 <li>Sources</li>
+                 <li>Forks</li>
+                 <li>Mirrors</li>
+               </ul>
+             </div>
+             <div class="repoExample">
+                <div class="repoItem">
+                  <a class="repo-list-stat-item tooltipped tooltipped-s" href="/grocej/team3/network" aria-label="Forks">
+      <span class="octicon octicon-git-branch"></span>
+      3
+    </a>
+                  "<h3 class="repoName"><%= projname %></h3>",
+                  "<p class="repoDescrip"><%= description %></p>",
+                  "<p class="upDated">Updated <%= newDate %></p>"
+                </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="bower_components/underscore/underscore.js"> </script>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"> </script>
+  <script type="text/javascript" src="orgs.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
